@@ -1,0 +1,333 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FF9900;
+
+}
+
+.page,
+.page_reply {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 60vh;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+
+}
+
+.hidden_title p {
+    font-size: 24px;
+    color: #1C4587;
+    font-family: 'Mulish', sans-serif;
+}
+
+.hidden_text {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'Mulish', sans-serif;
+}
+
+.hiden_button {
+    text-decoration: underline;
+    background-color: transparent;
+    border-style: none;
+    width: fit-content;
+    font-size: 16px;
+    color: #1C4587;
+    font-family: 'Mulish', sans-serif;
+}
+
+.invalid {
+    border-color: red;
+}
+
+#error {
+    color: red;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+}
+
+@media (max-width: 1100px) {
+
+    .page,
+    .page_reply {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+.page_reply {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+}
+
+.line {
+    margin: 0px auto;
+    padding: 0px;
+    min-height: 60vh;
+    max-height: 60vh;
+    width: 20px;
+    background-color: #1C4587;
+    border: 0px solid;
+    border-start-start-radius: 50px;
+    border-end-end-radius: 50px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 60vh;
+    max-height: 60vh;
+    gap: 2vh;
+    margin: 0px;
+    padding: 0px;
+    padding: 0px;
+}
+
+.title {
+    display: flex;
+    max-height: 10vh;
+    height: 20vh;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vh 1vw;
+    background-color: #FFFFFF;
+
+
+}
+
+.title_logo {
+    flex: 6;
+    background-image: url('Afhenix Administrative Services 1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.title_text {
+    flex: 6;
+    color: #1C4587;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title_text p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 768px) {
+    .title_logo {
+        flex: 6;
+    }
+
+    .title_text {
+        flex: 6;
+    }
+
+    .title_text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .title_text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-height: 680px) {
+    .title_logo {
+        flex: 3.6;
+    }
+
+    .title_text {
+        flex: 8.4;
+    }
+
+
+    .title_text p {
+        font-size: 18px;
+    }
+}
+
+
+.form {
+    height: 48vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px auto;
+    margin: 0px;
+    justify-items: center;
+
+}
+
+.form-email {
+    width: 70%;
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-password {
+    width: 70%;
+    margin: 1vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-submit {
+    width: 70%;
+    margin: 1vh auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    flex: 6;
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+}
+
+input {
+    flex: 6;
+    padding: 20px;
+    font-family: 'Mulish', sans-serif;
+    background-color: #1C4587;
+    color: #DED9D9;
+    font-size: 16px;
+}
+
+.submit_text {
+    flex: 8;
+    font-family: 'Mulish', sans-serif;
+    margin: 1vh 5vw 1vh 0;
+
+}
+
+.submit_button {
+    background-color: #1C4587;
+    color: #DED9D9;
+    padding: 20px;
+    max-height: 56px;
+    flex: 4;
+    margin: 1vh 0 1vh 1vw;
+
+}
+
+@media (max-width: 768px) {
+    input {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .form {
+        height: 100%;
+    }
+
+    .line {
+        height: 100%;
+    }
+
+    .submit_text {
+        font-size: 14px;
+    }
+
+    .submit_button {
+        font-size: 14px;
+    }
+
+    .form-submit {
+        flex-direction: column;
+    }
+}
+
+@media (max-height: 680px) {
+    input {
+        flex: 9;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    label {
+        flex: 3;
+        font-size: 14px;
+    }
+
+    .submit_text {
+        font-size: 14px;
+    }
+
+    .submit_button {
+        font-size: 14px;
+    }
+}
+
+@media (max-height: 680px) {
+    .form-password {
+        flex-direction: row;
+    }
+
+    .form-email {
+        flex-direction: row;
+    }
+}
+
+footer {
+    position: absolute;
+    top: 90vh;
+    height: 10vh;
+    font-size: 16px;
+    float: left;
+    margin: 0vh 0 0 5vh;
+    padding: 0;
+    color: #FFFFFF;
+
+}
+
+@media (max-width: 400px) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+.hide {
+    display: none;
+}
